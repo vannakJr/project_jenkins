@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /rnd-website
+#1) externally redirect "/file.html" to "/file"
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule !.*\.html$ %{REQUEST_FILENAME}.html [L]

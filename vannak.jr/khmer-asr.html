@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="km-KH">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="កម្មវិធីបំប្លែងសំឡេងនិយាយភាសាខ្មែរទៅជាអត្ថបទសរសេរ (Khmer Automatic Speech Recognition – Khmer ASR) គឺជាប្រព័ន្ធដែលប្រើប្រាស់បច្ចេកវិទ្យាបញ្ញាសិប្បនិម្មិត (Artificial Intelligence) ក្នុងការបំប្លែងសំឡេងនិយាយនិងឯកសារជាសំលេងជាភាសាខ្មែរ ទៅជាអត្ថបទសរសេរដោយ ស្វ័យប្រវត្តិ។" />
+    <meta name="author" content="RND CADT">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="Khmer Automatic Speech Recognition" />
+    <meta property="og:image" content="./images/asr/rec-asr.png" />
+    <link rel="icon" type="image/gif/png" href="./images/asr/rec-asr.png">
+    <meta property="og:description" content="កម្មវិធីបំប្លែងសំឡេងនិយាយភាសាខ្មែរទៅជាអត្ថបទសរសេរ (Khmer Automatic Speech Recognition – Khmer ASR) គឺជាប្រព័ន្ធដែលប្រើប្រាស់បច្ចេកវិទ្យាបញ្ញាសិប្បនិម្មិត (Artificial Intelligence) ក្នុងការបំប្លែងសំឡេងនិយាយនិងឯកសារជាសំលេងជាភាសាខ្មែរ ទៅជាអត្ថបទសរសេរដោយ ស្វ័យប្រវត្តិ។" />
+    <meta property="og:type" content="website" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="google-site-verification" content="Btr5ExhYpyFprPrSWxi_Kz1aw01iyBAwOSeLaeZA3vc" />
+    <title> Khmer Automatic Speech Recognition – Khmer ASR</title>
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="./images/asr/round_asr2.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="./css/asr.css" rel="stylesheet" />
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/asr/round_asr2.png" alt="" width="40" height="40" class="d-inline-block align-text-center">
+                    <span class="m-2"> Khmer ASR </span>
+                </a>
+            </div> <!-- container-fluid.// -->
+        </nav>
+    </header>
+
+    <section id="head" class="d-flex flex-column align-items-center justify-content-center">
+        <div class="bk-head">
+            <div>
+                <h1>កម្មវិធី Khmer ASR</h1>
+            </div>
+            <div class="mt-4">កម្មវិធីបំប្លែងសំឡេងនិយាយភាសាខ្មែរទៅជាអត្ថបទសរសេរ</div>
+        </div>
+
+    </section>
+    <section id="download">
+        <div class="box-download py-4 align-items-center">
+            ទាញយកកម្មវិធី
+        </div>
+        <div class="container mt-3 align-items-center​">
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-sm-3 align-items-center">
+                    <div class="card text-center mb-2 m-auto">
+                        <div style="max-width: 10rem;">
+                            <!-- <a href="https://play.google.com/store/apps/details?id=kh.edu.cadt.khmerasr" target="_blank"> -->
+                            <img src="./images/asr/qrcode-android.png" class="card-img-top" alt="android down">
+                            <!-- </a> -->
+                            <div class="card-body">
+                                <a href="https://play.google.com/store/apps/details?id=kh.edu.cadt.khmerasr" target="_blank">
+                                    <img src="./images/asr/Google_Play_Store_badge.png" class="card-img-top" alt="android download"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <div class="card text-center​​ mb-2 m-auto">
+                        <div style="max-width: 10rem;">
+                            <a href="https://apps.apple.com/kh/app/khmer-asr/id1561386259" target="_blank">
+                                <img src="./images/asr/qrcode-ios.png" class="card-img-top" alt="ios download"></a>
+                            <div class="card-body">
+                                <a href="https://apps.apple.com/kh/app/khmer-asr/id1561386259" target="_blank">
+                                    <img src="./images/asr/Download_on_the_App_Store.png" class="card-img-top" alt="ios download"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="infor" class="bg-light mt-3">
+        <div class="infor-head py-4 px-5  ">
+            ១. អំពីបច្ចេកវិទ្យា
+        </div>
+        <div class="container">
+            <div class="row detail-head ">
+                <div class="col-12 mt-4 fulljustify">
+                    <b>“កម្មវិធីបំប្លែងសំឡេងនិយាយភាសាខ្មែរទៅជាអត្ថបទសរសេរ (Khmer Automatic Speech Recognition – Khmer ASR)”</b> <span> គឺជាប្រព័ន្ធដែលប្រើប្រាស់បច្ចេកវិទ្យាបញ្ញាសិប្បនិម្មិត <b>(Artificial Intelligence)</b> ក្នុងការបំប្លែងសំឡេងនិយាយនិងឯកសារជាសំលេងជាភាសាខ្មែរ ទៅជាអត្ថបទសរសេរដោយ ស្វ័យប្រវត្តិ។</span>
+                </div>
+
+                <div class="col-12 mt-4 fulljustify">
+                    <span>ប្រព័ន្ធនេះត្រូវបានបង្កើតឡើងទាំងស្រុង ដោយក្រុមអ្នកស្រាវជ្រាវវ័យក្មេង របស់ <b>បណ្ឌិត្យសភាបច្ចេកវិទ្យា ឌីជីថល កម្ពុជា (អតីតវិទ្យាស្ថានជាតិប្រៃសណីយ៍ ទូរគមនាគមន៍ បច្ចេកវិទ្យា​គមនាគមន៍​​និង​ព័ត៌មាន)</b> នៃ ក្រសួងប្រៃសណីយ៍ និងទូរគមនាគមន៍ ដោយការប្រើប្រាស់វិធីសាស្រ្តរួមបញ្ចូលគ្នារវាង <b>Statistical Learning</b> និង <b>Deep Learning</b> ដែលជាវិធីសាស្រ្តថ្មី​សម្រាប់បង្កើតប្រព័ន្ធស្វ័យប្រវត្តិកម្ម បំប្លែងសំឡេងនិយាយ ទៅជា អត្ថបទសរសេរ សម្រាប់ភាសាដែលមានលក្ខណៈស្មុគស្មាញ និងមានទិន្នន័យតិចក្នុងទម្រង់ឌីជីថល។</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="infor-head py-4 px-5  ">
+            ២. អត្ថប្រយោជន៍
+        </div>
+        <div class="container">
+            <div class="row detail-head ">
+                <div class="col-12 mt-4 fulljustify">
+                    <p>បច្ចេកវិទ្យានេះអាចអនុញ្ញាតឱ្យសហគមន៍អ្នកស្រាវជ្រាវ និងអភិវឌ្ឍបច្ចេកវិទ្យានៅកម្ពុជាអាចប្រើប្រាស់ឬបំពាក់ជា មួយនឹងប្រព័ន្ធឬបច្ចេកវិទ្យាដទៃទៀត ដើម្បីប្រើប្រាស់លើការងារសំខាន់ៗ ដូចខាងក្រោម៖</p>
+                </div>
+                <div class="px-4 mt-2 fulljustify">
+                    <p class="fulljustify">១. ជួយសម្រួល និងពន្លឿនការអនុវត្តការងារប្រចាំថ្ងៃ ជាអាទិ៍ការងារកត់ត្រានៅក្នុងកិច្ចប្រជុំ និងកម្មវិធីផ្សេងៗដែលពុំមានសម្លេងរំខានខ្លាំង ដូចជាការបំប្លែងសំឡេងសន្ទរកថាទៅជាអត្ថបទសរសេរ, ការបំប្លែងសំឡេងបង្រៀនទៅជាអត្ថបទសរសេរនៅក្នុងការងារបណ្តុះបណ្តាល ។ល។</p>
+                    <p class="fulljustify">២. បំពាក់ជាបច្ចេកវិទ្យាជំនួយដល់ជនពិការក្នុងការបំពេញការងារ និងការរស់នៅប្រចាំថ្ងៃ។</p>
+                    <p class="fulljustify">៣. បង្កើតជាបច្ចេកវិទ្យាបញ្ជាដោយសំឡេង (Voice Command) ជាភាសាខ្មែរ ទៅលើវត្ថុ និងសម្ភារៈប្រើប្រាស់ផ្សេងៗ។</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="infor-head py-4 px-5  ">
+            ៣. របៀបប្រើប្រាស់
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 pb-3">
+                    <div class="card text-center ​​mb-2 m-auto">
+                        <div>
+                            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/l9YhD02LRG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="card-body text-center">
+                                <span>វីដេអូទី១៖ ការដំឡើងកម្មវិធី</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-center​​ mb-2 m-auto">
+                        <div>
+                            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/uSWeX7Xq2eQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="card-body text-center">
+                                <span>វីដេអូទី២៖ ការបំប្លែងសំឡេងនិយាយ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-center ​​mb-2 m-auto">
+                        <div>
+                            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/OCG8gVpwbMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="card-body text-center">
+                                <span>វីដេអូទី៣៖ ការបំប្លែងឯកសារជាសំឡេង</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="infor" class="bg-light pt-3 pb-4">
+        <div class="infor-head py-4 px-5  ">
+            ៤. រូបថតអេក្រង់
+        </div>
+        <div class="container mt-3 align-items-center​">
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-sm-4 align-items-center">
+                    <div class="card text-center mb-2 m-auto">
+                        <img src="./images/asr/vtotext.jpg" class="img-thumbnail" />
+                        <div class="card-body text-center">
+                            រូបទី១៖ អេក្រង់បំប្លែងសំឡេងនិយាយ
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="card text-center​​ mb-2 m-auto">
+                        <img src="./images/asr/fvtotext.jpg" class="img-thumbnail" />
+                        <div class="card-body text-center">
+                            រូបទី២៖ អេក្រង់បំប្លែងឯកសារជាសំលេង
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="infor" class="bg-light pt-3 pb-4">
+        <div class="infor-head py-4 px-5  ">
+            ៥. ដែនកំណត់នៃការប្រើប្រាស់
+        </div>
+        <div class="container mt-3 align-items-center​">
+            <div class="row justify-content-center">
+                
+                <div class="col-xs-12 col-sm-12 mt-5">
+                    <div class="row">
+                        <!-- <div class="col-xs-12 col-sm-4">
+                            <div class="card bg-warning" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title mb-3">Information</h5>
+                                  កម្មវិធី Khmer ASR គឹជាសមិទ្ធផលនែការស្រាវជ្រាវហើយត្រូវបានដាក់អោយដំណើរការប្រើប្រាស់ជាសាធារណៈដែលមិនមែនជាលក្ខណៈសេវាកម្ម។ សម្រាប់ការប្រើប្រាស់ប្រព័ន្ធនេះក្នុងគោលបំណងដោយឡែកណាមួយ សូមធ្វើការទំនាក់ទំនងតាមរយៈអ៊ីម៉ែលខាងក្រោម។</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div> -->
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="./images/asr/informat.png" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title​ ​​mb-5 pb-3">បញ្ជាក់</h5>
+                                  <p class="card-text"​>កម្មវិធី Khmer ASR គឹជាសមិទ្ធផលនែការស្រាវជ្រាវហើយត្រូវបានដាក់អោយដំណើរការប្រើប្រាស់ជាសាធារណៈដែលមិនមែនជាលក្ខណៈសេវាកម្ម។ សម្រាប់ការប្រើប្រាស់ប្រព័ន្ធនេះក្នុងគោលបំណងដោយឡែកណាមួយ សូមធ្វើការទំនាក់ទំនងតាមរយៈអ៊ីម៉ែលខាងក្រោម។</p>
+                                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card" style="width: 18rem;">
+                                <div style="background-color: #1958b8;">
+                                    <img class="card-img-top" src="./images/asr/duration.png" alt="Card image cap">
+                                </div>
+                               
+                                <div class="card-body">
+                                  <h5 class="card-title​ ​​​mb-5 pb-3">ការកំណត់នាទី</h5>
+                                  <p class="card-text">លោកអ្នកអាចប្រើប្រាស់សម្លេងដើម្បីបំប្លែងទៅជាអក្សរបាន ៥នាទី ក្នុងមួយលើក។</p>
+                                  
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card" style="width: 18rem;">
+                                <div class="" style="background-color: #1958b8;">
+                                    <img class="card-img-top" src="./images/asr/wave_file.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title​ ​​​mb-5 pb-3">ការកំណត់ទំហំឯកសារ</h5>
+                                  <p class="card-text">លោកអ្នកអាចបញ្ចូលឯកសារដែលមានទំហំយ៉ាងធំបំផុតត្រឹម ៥០មេហ្គាប៉ៃ ក្នុងមួយលើក។ </p>
+                                </div>
+                              </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="infor" class="bg-light pt-3 pb-4">
+        <div class="infor-head py-4 px-5  ">
+            ៦. មតិត្រឡប់
+        </div>
+        <div class="container mt-3 align-items-center​">
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-sm-6 align-items-center">
+                    <div class="card text-center mb-2 m-auto">
+                        <div class="card">
+                            <div class="card-body​ p-3 m-2 bg-light">
+                              បន្ទាប់ពីបានប្រើប្រាស់ កម្មវិធីនេះរួចហើយ លោកអ្នកអាចផ្ដល់នូវមតិយោបល់ផ្សេងៗ តាមរយៈ តំណភ្ជាប់នេះ៖​ <a href="https://forms.gle/51G2uRrWUjccVJSg7" target="_blank"​ class="btn btn-sm btn-warning m-2">មតិត្រឡប់</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                    <div class="card text-center​​ mb-2 m-auto">
+                        <a href="https://forms.gle/51G2uRrWUjccVJSg7" target="_blank"><img src="./images/asr/feedback.png" class="img-thumbnail" /></a>
+                        <div class="card-body text-center">
+                            រូបទី៣៖ មតិត្រឡប់
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer" class="p-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-7 col-lg-7">
+                <div class="d-flex flex-column">
+                    <p class="infor-head">ព័ត៌មានបន្ថែម</p>
+                    <div class="py-1">ក្រុមស្រាវជ្រាវ និងអភិវឌ្ឍន៍ </div>
+                    <div class="py-1"><a class="linkmail" href="mailto: rnd@cadt.edu.kh">rnd@cadt.edu.kh </a></div>
+                    <div class="py-1">លោក បេ ចន្ត្រា </div>
+                    <div class="py-1 pb-3"><a class="linkmail" href="mailto: chantra.be@cadt.edu.kh">chantra.be@cadt.edu.kh</a></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-2 col-lg-2 p-2">
+                <div class=" mb-2 m-auto">
+                    <div style="max-width: 10rem;" class="text-center mb-2 m-auto">
+                        <!-- <a href="https://play.google.com/store/apps/details?id=kh.edu.cadt.khmerasr" target="_blank"> -->
+                        <p>គាំទ្រដោយ</p>
+
+                        <!-- </a> -->
+                        <div class="">
+                            <img src="./images/asr/mptc.png" class="card-img-top" alt="android down">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-2 col-lg-2 p-2">
+                <div class=" text-center mb-2 m-auto">
+                    <div style="max-width: 10rem;" class="text-center mb-2 m-auto">
+                        <!-- <a href="https://play.google.com/store/apps/details?id=kh.edu.cadt.khmerasr" target="_blank"> -->
+                        <p>រៀបចំដោយ</p>
+
+                        <!-- </a> -->
+                        <div class="">
+                            <img src="./images/asr/logo_cadt_round.png" class="card-img-top" alt="android down">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="copyright">
+        <div class="text-center p-3 ">ឆ្នាំ2021 © រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ៖ បណ្ឌិត្យសភាបច្ចេកវិទ្យាឌីជីថលកម្ពុជា (CADT)</div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    document.getElementById('navbar_top').classList.add('nav-bg-cl');
+                } else {
+                    document.getElementById('navbar_top').classList.remove('nav-bg-cl');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
