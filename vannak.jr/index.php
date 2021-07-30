@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>R&D Center NIPTCT-CADT</title>
+    <title>R&D Center CADT</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
